@@ -1,0 +1,26 @@
+{
+  "name": "sb01-revisions-cyno-clock-tonysaes",
+  "version": "1.0.0",
+  "description": "## Présentation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node --watch cynoclock.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/O-clock-Cambridge/SB01-revisions-cyno-clock-TonySaes.git"
+  },
+  "keywords": [],
+  "author": "",
+  "type": "module",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/O-clock-Cambridge/SB01-revisions-cyno-clock-TonySaes/issues"
+  },
+  "homepage": "https://github.com/O-clock-Cambridge/SB01-revisions-cyno-clock-TonySaes#readme",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.1.0"
+  }
+}
