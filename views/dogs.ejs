@@ -1,0 +1,33 @@
+<%- include('partials/header') %>
+
+    <div class="container">
+        <div class="cards">
+            <% for (const dog of dogs) { %>
+            <div class="card">
+                <div class="card-top">
+                    <img class="card-pic" alt="Image de chiots" src="<%= dog.pic %>" />
+                </div>
+                <div class="card-body">
+                    <p class="card-title"><a href="/details"><%= dog.name %></a></p>
+                    <ul class="card-carac">
+                        <li class="card-caracItem">
+                            <span class="card-caracProp">Age :</span>
+                            <%= dog.age %>
+                        </li>
+                        <li class="card-caracItem">
+                            <span class="card-caracProp">Couleurs :</span>
+                            <%= dog.color %>
+                        </li>
+                        <li class="card-caracItem">
+                            <span class="card-caracProp">Signe particulier :</span>
+                            <%= dog.signe %>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <% } %>
+        </div>
+    </div>
+</body>
+
+</html>

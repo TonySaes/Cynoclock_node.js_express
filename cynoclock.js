@@ -13,7 +13,10 @@ app.set('views', __dirname + '/views');
 app.use(express.static('public'));
 
 app.get('/', (req, res) => {
-    res.render('home', {dogs});
+    res.render('home');
+});
+app.get('/dogs', (req, res) => {
+    res.render('dogs', {dogs});
 });
 
 app.listen(port, () => {
