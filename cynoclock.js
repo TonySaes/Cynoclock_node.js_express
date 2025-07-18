@@ -18,7 +18,11 @@ app.get('/', (req, res) => {
 app.get('/dogs', (req, res) => {
     res.render('dogs', {dogs});
 });
-
+app.get('/dogs/:dog', (req, res) => {
+    const dogUrl = req.params.dog;
+    const dogToDisplay = dogs.find((dog) => dog.url === dogUrl);
+    res.render('details', {dogToDisplay});
+})
 app.listen(port, () => {
     console.log(`Running on http://localhost:${port}`);
 });

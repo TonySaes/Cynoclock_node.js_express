@@ -1,0 +1,11 @@
+<%- include('partials/header') %>
+    <div class="container">
+        <div class="details">
+            <img class="details-pic" alt="chiots" src="<%= dogToDisplay.pic %>"/>
+            <h2 class="details-title"><%= dogToDisplay.name %></h2>
+            <% for (const story of dogToDisplay.story) { %>
+            <p class="details-p"><%= story %></p>
+            <% } %>
+        </div>
+    </div>
+<%- include('partials/footer') %>
